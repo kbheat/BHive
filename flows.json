@@ -134,7 +134,7 @@
         "path": "/page2",
         "icon": "home",
         "layout": "grid",
-        "theme": "default",
+        "theme": "b7fda55bde7244b1",
         "breakpoints": [
             {
                 "name": "Default",
@@ -159,8 +159,8 @@
         ],
         "order": 1,
         "className": "",
-        "visible": true,
-        "disabled": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "36b02f21cc66f12c",
@@ -305,7 +305,7 @@
         "page": "",
         "ui": "",
         "name": "Crop Profiles",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "head": "",
