@@ -159,8 +159,22 @@
         ],
         "order": 1,
         "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "36b02f21cc66f12c",
+        "type": "ui-group",
+        "name": "Crop Profiles",
+        "page": "3385d45c6eb71e38",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
         "visible": "true",
-        "disabled": "false"
+        "disabled": "false",
+        "groupType": "default"
     },
     {
         "id": "9c31aaae98b7417d",
@@ -287,8 +301,8 @@
         "id": "cd94253ac9728d44",
         "type": "ui-template",
         "z": "190cd4b9f45ba92d",
-        "group": "",
-        "page": "3385d45c6eb71e38",
+        "group": "36b02f21cc66f12c",
+        "page": "",
         "ui": "",
         "name": "Crop Profiles",
         "order": 0,
@@ -299,7 +313,7 @@
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
-        "templateScope": "widget:page",
+        "templateScope": "local",
         "className": "",
         "x": 170,
         "y": 400,
