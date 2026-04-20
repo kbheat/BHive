@@ -1,6 +1,6 @@
 [
     {
-        "id": "5b9088f11588525c",
+        "id": "255a6993ba1dc0d1",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,7 +8,7 @@
         "env": []
     },
     {
-        "id": "06b579fc3bc5fd14",
+        "id": "d2db4a8dcc94327b",
         "type": "ui-base",
         "name": "My Dashboard",
         "path": "/dashboard",
@@ -28,7 +28,7 @@
         "allowInstall": false
     },
     {
-        "id": "bc5ecf900d297101",
+        "id": "2e0de69af924939c",
         "type": "ui-theme",
         "name": "Default Theme",
         "colors": {
@@ -47,14 +47,14 @@
         }
     },
     {
-        "id": "2e5d4223820e719e",
+        "id": "fb3470bfca8816b5",
         "type": "ui-page",
         "name": "Page 1",
-        "ui": "06b579fc3bc5fd14",
+        "ui": "d2db4a8dcc94327b",
         "path": "/page1",
         "icon": "home",
         "layout": "grid",
-        "theme": "bc5ecf900d297101",
+        "theme": "2e0de69af924939c",
         "breakpoints": [
             {
                 "name": "Default",
@@ -77,210 +77,45 @@
                 "cols": 12
             }
         ],
-        "order": 4,
+        "order": 1,
         "className": "",
         "visible": "true",
         "disabled": "false"
     },
     {
-        "id": "5a7a67a4568c688b",
-        "type": "ui-page",
-        "name": "Settings",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/page3",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "default",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 3,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "fb49d5e3789b0b98",
+        "id": "2aa4ee940664cc1e",
         "type": "ui-group",
-        "name": "Target Ranges",
-        "page": "5a7a67a4568c688b",
-        "width": "12",
+        "name": "Dashboard",
+        "page": "fb3470bfca8816b5",
+        "width": 6,
         "height": 1,
         "order": 1,
-        "showTitle": false,
+        "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
     },
     {
-        "id": "71eff72ef1e79e34",
-        "type": "ui-page",
-        "name": "Main",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/page3",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bc5ecf900d297101",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "page-bhive",
-        "type": "ui-page",
-        "name": "Dashboard",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/dashboard",
-        "layout": "grid",
-        "theme": "my-theme",
-        "order": 6
-    },
-    {
-        "id": "page-controls",
-        "type": "ui-page",
-        "name": "Controls",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/controls",
-        "layout": "grid",
-        "theme": "my-theme",
-        "order": 5
-    },
-    {
-        "id": "page-settings",
-        "type": "ui-page",
-        "name": "Settings",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/settings",
-        "layout": "grid",
-        "theme": "my-theme",
-        "order": 1
-    },
-    {
-        "id": "group-main",
-        "type": "ui-group",
-        "name": "Main",
-        "page": "page-bhive",
-        "width": 12,
-        "height": 1,
-        "order": 1
-    },
-    {
-        "id": "group-controls",
-        "type": "ui-group",
-        "name": "Controls",
-        "page": "page-controls",
-        "width": 12,
-        "height": 1,
-        "order": 1
-    },
-    {
-        "id": "group-settings",
-        "type": "ui-group",
-        "name": "Settings",
-        "page": "page-settings",
-        "width": 12,
-        "height": 1,
-        "order": 1
-    },
-    {
-        "id": "template-dashboard",
+        "id": "675756426ac810a8",
         "type": "ui-template",
-        "z": "5b9088f11588525c",
-        "group": "group-main",
-        "name": "BHive Dashboard",
-        "order": 1,
-        "width": 12,
-        "height": 1,
-        "format": "<template>\n<div style=\"padding:16px;font-family:sans-serif;\">\n\n  <!-- Crop Tracker -->\n  <div style=\"background:#f5f5f5;border-radius:12px;padding:16px;margin-bottom:12px;\">\n    <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">Current Crop</p>\n    <div style=\"display:flex;align-items:center;gap:12px;\">\n      <div style=\"width:40px;height:40px;background:#e8f5e9;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;\">🌿</div>\n      <div style=\"flex:1;\">\n        <p style=\"font-size:16px;font-weight:500;margin:0;\">{{ msg.crop_name || 'Lettuce — Butterhead' }}</p>\n        <p style=\"font-size:12px;color:#888;margin:2px 0 0;\">Day {{ msg.days_growth || 18 }} of {{ msg.days_to_harvest || 42 }} — Vegetative stage</p>\n        <div style=\"height:4px;background:#e0e0e0;border-radius:2px;margin-top:8px;\">\n          <div :style=\"'height:4px;background:#4caf50;border-radius:2px;width:' + (msg.progress || 43) + '%;'\"></div>\n        </div>\n      </div>\n      <div style=\"text-align:right;\">\n        <p style=\"font-size:22px;font-weight:500;color:#4caf50;margin:0;\">{{ msg.progress || 43 }}%</p>\n        <p style=\"font-size:11px;color:#888;margin:2px 0 0;\">to harvest</p>\n      </div>\n    </div>\n  </div>\n\n  <!-- Internal Sensors -->\n  <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">Environment — Internal</p>\n  <div style=\"display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;\">\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">pH</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.ph || '6.1' }}</p>\n      <p :style=\"'font-size:11px;margin:2px 0 0;color:' + (msg.ph_alert ? '#e53935' : '#4caf50')\">{{ msg.ph_alert || '● In range' }}</p>\n    </div>\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">EC</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.ec || '1.8' }} <span style=\"font-size:12px;color:#888;\">mS</span></p>\n      <p :style=\"'font-size:11px;margin:2px 0 0;color:' + (msg.ec_alert ? '#e53935' : '#4caf50')\">{{ msg.ec_alert || '● In range' }}</p>\n    </div>\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Int. Temp</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.int_temp || '72' }} <span style=\"font-size:12px;color:#888;\">°F</span></p>\n      <p :style=\"'font-size:11px;margin:2px 0 0;color:' + (msg.temp_alert ? '#e53935' : '#4caf50')\">{{ msg.temp_alert || '● Nominal' }}</p>\n    </div>\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Int. RH</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.int_rh || '68' }} <span style=\"font-size:12px;color:#888;\">%</span></p>\n      <p :style=\"'font-size:11px;margin:2px 0 0;color:' + (msg.rh_alert ? '#ef9f27' : '#4caf50')\">{{ msg.rh_alert || '● In range' }}</p>\n    </div>\n  </div>\n\n  <!-- External Sensors -->\n  <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">Environment — External</p>\n  <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;\">\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Ext. Temp</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.ext_temp || '64' }} <span style=\"font-size:12px;color:#888;\">°F</span></p>\n    </div>\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Ext. RH</p>\n      <p style=\"font-size:22px;font-weight:500;margin:0;\">{{ msg.ext_rh || '52' }} <span style=\"font-size:12px;color:#888;\">%</span></p>\n    </div>\n  </div>\n\n  <!-- System Status -->\n  <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">System Status</p>\n  <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;\">\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.lights ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Grow Lights</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.lights ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.lights ? '#2e7d32' : '#888')\">{{ msg.lights ? 'On' : 'Off' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.main_pump ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Main Pump</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.main_pump ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.main_pump ? '#2e7d32' : '#888')\">{{ msg.main_pump ? 'Running' : 'Off' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.pump_a ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Pump A (Nutrients)</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.pump_a ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.pump_a ? '#2e7d32' : '#888')\">{{ msg.pump_a ? 'Dosing' : 'Idle' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.pump_b ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Pump B (Nutrients)</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.pump_b ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.pump_b ? '#2e7d32' : '#888')\">{{ msg.pump_b ? 'Dosing' : 'Idle' }}</span>\n      </div>\n    </div>\n    <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:12px;\">\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.ph_up ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">pH Up</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.ph_up ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.ph_up ? '#2e7d32' : '#888')\">{{ msg.ph_up ? 'Dosing' : 'Idle' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.ph_down ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">pH Down</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.ph_down ? '#e8f5e9' : '#f5f5f5') + ';color:' + (msg.ph_down ? '#2e7d32' : '#888')\">{{ msg.ph_down ? 'Dosing' : 'Idle' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.humidifier ? '#ef9f27' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Humidifier</span>\n        <span :style=\"'font-size:11px;padding:2px 8px;border-radius:6px;background:' + (msg.humidifier ? '#faeeda' : '#f5f5f5') + ';color:' + (msg.humidifier ? '#854f0b' : '#888')\">{{ msg.humidifier ? 'Running' : 'Off' }}</span>\n      </div>\n      <div style=\"display:flex;align-items:center;gap:8px;\">\n        <div :style=\"'width:10px;height:10px;border-radius:50%;background:' + (msg.vents > 0 ? '#4caf50' : '#bdbdbd')\"></div>\n        <span style=\"font-size:13px;flex:1;\">Vents</span>\n        <span style=\"font-size:11px;padding:2px 8px;border-radius:6px;background:#e8f5e9;color:#2e7d32;\">{{ msg.vents || 72 }}% open</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Alerts -->\n  <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">Alerts</p>\n  <div v-for=\"alert in (msg.alerts || defaultAlerts)\" :key=\"alert.msg\"\n    :style=\"'border-radius:12px;padding:12px;margin-bottom:8px;background:' + (alert.type === 'danger' ? '#fcebeb' : alert.type === 'warn' ? '#faeeda' : '#e8f5e9') + ';border:0.5px solid ' + (alert.type === 'danger' ? '#f7c1c1' : alert.type === 'warn' ? '#fac775' : '#c0dd97')\">\n    <p style=\"font-size:13px;font-weight:500;margin:0 0 2px;\">{{ alert.title }}</p>\n    <p style=\"font-size:12px;color:#666;margin:0;\">{{ alert.msg }}</p>\n  </div>\n\n</div>\n\n<script>\nexport default {\n  data() {\n    return {\n      defaultAlerts: [\n        { type: 'warn', title: 'Int. RH High', msg: '68% exceeds target (55-65%). Check exhaust fan.' },\n        { type: 'danger', title: 'pH Drift', msg: 'Trending downward over 4h. Last dose: pH Up 12mL.' },\n        { type: 'ok', title: 'EC Stable', msg: 'Within target range for 6h. No dosing required.' }\n      ]\n    }\n  }\n}\n</script>\n</template>",
-        "storeOutMessages": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 350,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "template-controls",
-        "type": "ui-template",
-        "z": "5b9088f11588525c",
-        "group": "group-controls",
-        "name": "BHive Controls",
-        "order": 1,
-        "width": 12,
-        "height": 1,
-        "format": "<template>\n<div style=\"padding:16px;font-family:sans-serif;\">\n\n  <p style=\"font-size:11px;color:#888;margin:0 0 16px;text-transform:uppercase;letter-spacing:0.08em;\">Manual Controls</p>\n\n  <!-- Pumps -->\n  <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:16px;margin-bottom:12px;\">\n    <p style=\"font-size:13px;font-weight:500;margin:0 0 12px;\">Dosing Pumps</p>\n    <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;\">\n      <button @click=\"togglePump('pump_a')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (pump_a ? '#e53935' : '#4caf50') + ';color:#fff;'\">{{ pump_a ? 'Stop Pump A' : 'Start Pump A' }}</button>\n      <button @click=\"togglePump('pump_b')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (pump_b ? '#e53935' : '#4caf50') + ';color:#fff;'\">{{ pump_b ? 'Stop Pump B' : 'Start Pump B' }}</button>\n      <button @click=\"togglePump('ph_up')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (ph_up ? '#e53935' : '#1e88e5') + ';color:#fff;'\">{{ ph_up ? 'Stop pH Up' : 'Dose pH Up' }}</button>\n      <button @click=\"togglePump('ph_down')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (ph_down ? '#e53935' : '#fb8c00') + ';color:#fff;'\">{{ ph_down ? 'Stop pH Down' : 'Dose pH Down' }}</button>\n    </div>\n  </div>\n\n  <!-- Vents -->\n  <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:16px;margin-bottom:12px;\">\n    <p style=\"font-size:13px;font-weight:500;margin:0 0 4px;\">Vent Position</p>\n    <p style=\"font-size:12px;color:#888;margin:0 0 12px;\">Both actuators move in sync</p>\n    <input type=\"range\" min=\"0\" max=\"100\" step=\"1\" v-model=\"vent_pos\" @change=\"sendVent\" style=\"width:100%;\" />\n    <div style=\"display:flex;justify-content:space-between;margin-top:4px;\">\n      <span style=\"font-size:12px;color:#888;\">Closed</span>\n      <span style=\"font-size:14px;font-weight:500;color:#4caf50;\">{{ vent_pos }}% open</span>\n      <span style=\"font-size:12px;color:#888;\">Open</span>\n    </div>\n  </div>\n\n  <!-- Lights & Humidifier -->\n  <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:16px;\">\n    <p style=\"font-size:13px;font-weight:500;margin:0 0 12px;\">Environment</p>\n    <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;\">\n      <button @click=\"togglePump('lights')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (lights ? '#e53935' : '#4caf50') + ';color:#fff;'\">{{ lights ? 'Lights Off' : 'Lights On' }}</button>\n      <button @click=\"togglePump('humidifier')\" :style=\"'width:100%;padding:14px;border:none;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:' + (humidifier ? '#e53935' : '#4caf50') + ';color:#fff;'\">{{ humidifier ? 'Humidifier Off' : 'Humidifier On' }}</button>\n    </div>\n  </div>\n\n</div>\n\n<script>\nexport default {\n  data() {\n    return {\n      pump_a: false,\n      pump_b: false,\n      ph_up: false,\n      ph_down: false,\n      lights: false,\n      humidifier: false,\n      vent_pos: 50\n    }\n  },\n  methods: {\n    togglePump(name) {\n      this[name] = !this[name]\n      this.$socket.emit('msg-input:controls', { payload: { [name]: this[name] } })\n    },\n    sendVent() {\n      this.$socket.emit('msg-input:controls', { payload: { vent_pos: this.vent_pos } })\n    }\n  }\n}\n</script>\n</template>",
-        "storeOutMessages": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 340,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "template-settings",
-        "type": "ui-template",
-        "z": "5b9088f11588525c",
-        "group": "group-settings",
+        "z": "255a6993ba1dc0d1",
+        "group": "2aa4ee940664cc1e",
         "page": "",
         "ui": "",
-        "name": "BHive Settings",
+        "name": "BHive Dashboard",
         "order": 1,
-        "width": 12,
-        "height": 1,
-        "format": "<template>\n<div style=\"padding:16px;font-family:sans-serif;\">\n\n  <p style=\"font-size:11px;color:#888;margin:0 0 16px;text-transform:uppercase;letter-spacing:0.08em;\">Crop Settings</p>\n  <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:16px;margin-bottom:12px;\">\n    <div style=\"margin-bottom:12px;\">\n      <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Crop Name</p>\n      <input type=\"text\" v-model=\"crop_name\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n    </div>\n    <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;\">\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Start Date</p>\n        <input type=\"date\" v-model=\"start_date\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Days to Harvest</p>\n        <input type=\"number\" v-model=\"days_to_harvest\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n    </div>\n  </div>\n\n  <p style=\"font-size:11px;color:#888;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.08em;\">Target Ranges</p>\n  <div style=\"background:#fff;border:0.5px solid #e0e0e0;border-radius:12px;padding:16px;margin-bottom:12px;\">\n    <div style=\"display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;\">\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">pH Min</p>\n        <input type=\"number\" step=\"0.1\" v-model=\"ph_min\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">pH Max</p>\n        <input type=\"number\" step=\"0.1\" v-model=\"ph_max\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">EC Min</p>\n        <input type=\"number\" step=\"0.1\" v-model=\"ec_min\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">EC Max</p>\n        <input type=\"number\" step=\"0.1\" v-model=\"ec_max\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Temp Min °F</p>\n        <input type=\"number\" v-model=\"temp_min\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">Temp Max °F</p>\n        <input type=\"number\" v-model=\"temp_max\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">RH Min %</p>\n        <input type=\"number\" v-model=\"rh_min\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n      <div>\n        <p style=\"font-size:11px;color:#888;margin:0 0 4px;\">RH Max %</p>\n        <input type=\"number\" v-model=\"rh_max\" style=\"width:100%;padding:8px;border:0.5px solid #e0e0e0;border-radius:8px;font-size:14px;\" />\n      </div>\n    </div>\n  </div>\n\n  <button @click=\"saveSettings\" style=\"width:100%;padding:14px;background:#4caf50;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:500;cursor:pointer;\">Save Settings</button>\n\n</div>\n\n<script>\nexport default {\n  data() {\n    return {\n      crop_name: 'Lettuce — Butterhead',\n      start_date: '',\n      days_to_harvest: 42,\n      ph_min: 5.5,\n      ph_max: 6.5,\n      ec_min: 1.2,\n      ec_max: 2.4,\n      temp_min: 65,\n      temp_max: 80,\n      rh_min: 50,\n      rh_max: 70\n    }\n  },\n  methods: {\n    saveSettings() {\n      this.$socket.emit('msg-input:settings', {\n        payload: {\n          crop_name: this.crop_name,\n          start_date: this.start_date,\n          days_to_harvest: this.days_to_harvest,\n          ph_min: this.ph_min,\n          ph_max: this.ph_max,\n          ec_min: this.ec_min,\n          ec_max: this.ec_max,\n          temp_min: this.temp_min,\n          temp_max: this.temp_max,\n          rh_min: this.rh_min,\n          rh_max: this.rh_max\n        }\n      })\n    }\n  }\n}\n</script>\n</template>",
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n        <h2>Counter</h2>\n        <!-- Conditional Styling using Attribute Binding (\":\") -->\n        <!-- and rendering content inside <tags></tags> with {{ }} -->\n        <p :style=\"{'color' : (count > 5 ? 'red' : 'green' )}\">Current Count: {{ count }}</p>\n        <!-- Computed Rendering using Vue Computed Variables -->\n        <p class=\"my-class\">Formatted Count: {{ formattedCount }}</p>\n        <!-- Conditional Rendering with \"v-if\" -->\n        <b v-if=\"count > 5\">Too many!</b>\n        <v-btn @click=\"increase()\">Increment</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            // define variables available component-wide\n            // (in <template> and component functions)\n            return {\n                count: 0\n            }\n        },\n        watch: {\n            // watch for any changes of \"count\"\n            count: function () {\n                if (this.count % 5 === 0) {\n                    this.send({payload: 'Multiple of 5'})\n                }\n            }\n        },\n        computed: {\n            // automatically compute this variable\n            // whenever VueJS deems appropriate\n            formattedCount: function () {\n                return this.count + ' Apples'\n            }\n        },\n        methods: {\n            // expose a method to our <template> and Vue Application\n            increase: function () {\n                this.count++\n            }\n        },\n        mounted() {\n            // code here when the component is first loaded\n        },\n        unmounted() {\n            // code here when the component is removed from the Dashboard\n            // i.e. when the user navigates away from the page\n        }\n    }\n</script>\n<style>\n    /* define any styles here - supports raw CSS */\n    .my-class {\n        color: red;\n    }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 340,
-        "y": 260,
+        "x": 150,
+        "y": 200,
         "wires": [
             []
         ]
