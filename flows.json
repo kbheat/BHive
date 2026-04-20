@@ -113,7 +113,7 @@
                 "cols": "12"
             }
         ],
-        "order": 1,
+        "order": 2,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -133,12 +133,48 @@
         "groupType": "default"
     },
     {
+        "id": "71eff72ef1e79e34",
+        "type": "ui-page",
+        "name": "Main",
+        "ui": "06b579fc3bc5fd14",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bc5ecf900d297101",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
         "id": "c9c5def3b477cd4f",
         "type": "ui-template",
         "z": "5b9088f11588525c",
         "group": "",
-        "page": "",
-        "ui": "06b579fc3bc5fd14",
+        "page": "71eff72ef1e79e34",
+        "ui": "",
         "name": "BHive Dashboard",
         "order": 1,
         "width": 0,
@@ -148,7 +184,7 @@
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
-        "templateScope": "widget:ui",
+        "templateScope": "widget:page",
         "className": "",
         "x": 230,
         "y": 280,
@@ -164,7 +200,7 @@
         "page": "",
         "ui": "",
         "name": "Settings",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "head": "",
