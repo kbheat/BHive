@@ -322,31 +322,6 @@
         ]
     },
     {
-        "id": "e8aa88954f7383f2",
-        "type": "inject",
-        "z": "190cd4b9f45ba92d",
-        "name": "inject",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 70,
-        "y": 320,
-        "wires": [
-            [
-                "3fc7a57f3de5541a"
-            ]
-        ]
-    },
-    {
         "id": "3fc7a57f3de5541a",
         "type": "function",
         "z": "190cd4b9f45ba92d",
@@ -355,7 +330,7 @@
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "msg = {}\nmsg.payload = {\n    crops: [\n        { name: 'Lettuce — Butterhead', days: 42, ph_min: 5.5, ph_max: 6.5, ec_min: 0.8, ec_max: 1.6, temp_min: 60, temp_max: 75, rh_min: 50, rh_max: 70, color: '#4caf50' },\n        { name: 'Basil — Genovese', days: 28, ph_min: 5.5, ph_max: 6.5, ec_min: 1.0, ec_max: 1.6, temp_min: 65, temp_max: 80, rh_min: 50, rh_max: 70, color: '#8bc34a' },\n        { name: 'Spinach', days: 40, ph_min: 6.0, ph_max: 7.0, ec_min: 1.8, ec_max: 2.3, temp_min: 55, temp_max: 70, rh_min: 50, rh_max: 70, color: '#2e7d32' },\n        { name: 'Cherry Tomato', days: 70, ph_min: 5.5, ph_max: 6.5, ec_min: 2.0, ec_max: 3.5, temp_min: 65, temp_max: 80, rh_min: 50, rh_max: 70, color: '#e53935' },\n        { name: 'Strawberry', days: 90, ph_min: 5.5, ph_max: 6.5, ec_min: 1.2, ec_max: 1.8, temp_min: 60, temp_max: 75, rh_min: 60, rh_max: 80, color: '#f06292' },\n        { name: 'Kale', days: 55, ph_min: 5.5, ph_max: 6.5, ec_min: 1.25, ec_max: 1.5, temp_min: 55, temp_max: 75, rh_min: 45, rh_max: 65, color: '#388e3c' }\n    ],\n    active: null,\n    start_date: new Date().toISOString().split('T')[0]\n}\nnode.send(msg)",
         "finalize": "",
         "libs": [],
         "x": 200,
