@@ -1,6 +1,6 @@
 [
     {
-        "id": "255a6993ba1dc0d1",
+        "id": "93801906b94635dd",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,7 +8,7 @@
         "env": []
     },
     {
-        "id": "d2db4a8dcc94327b",
+        "id": "7b8c7ea0359ba193",
         "type": "ui-base",
         "name": "My Dashboard",
         "path": "/dashboard",
@@ -28,7 +28,7 @@
         "allowInstall": false
     },
     {
-        "id": "2e0de69af924939c",
+        "id": "5b0df2a211cee419",
         "type": "ui-theme",
         "name": "Default Theme",
         "colors": {
@@ -47,14 +47,14 @@
         }
     },
     {
-        "id": "fb3470bfca8816b5",
+        "id": "8292db1a3a72c0db",
         "type": "ui-page",
         "name": "Page 1",
-        "ui": "d2db4a8dcc94327b",
+        "ui": "7b8c7ea0359ba193",
         "path": "/page1",
         "icon": "home",
         "layout": "grid",
-        "theme": "2e0de69af924939c",
+        "theme": "5b0df2a211cee419",
         "breakpoints": [
             {
                 "name": "Default",
@@ -83,27 +83,25 @@
         "disabled": "false"
     },
     {
-        "id": "2aa4ee940664cc1e",
+        "id": "fc9f0e54ea454ddb",
         "type": "ui-group",
-        "name": "Dashboard",
-        "page": "fb3470bfca8816b5",
+        "name": "Group 1",
+        "page": "8292db1a3a72c0db",
         "width": 6,
         "height": 1,
         "order": 1,
         "showTitle": true,
         "className": "",
-        "visible": "true",
-        "disabled": "false",
+        "visible": true,
+        "disabled": false,
         "groupType": "default"
     },
     {
-        "id": "675756426ac810a8",
+        "id": "1dac1dcb3a987654",
         "type": "ui-template",
-        "z": "255a6993ba1dc0d1",
-        "group": "2aa4ee940664cc1e",
-        "page": "",
-        "ui": "",
-        "name": "BHive Dashboard",
+        "z": "93801906b94635dd",
+        "group": "fc9f0e54ea454ddb",
+        "name": "",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -114,8 +112,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 150,
-        "y": 200,
+        "x": 140,
+        "y": 160,
         "wires": [
             []
         ]
