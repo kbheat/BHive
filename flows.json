@@ -83,56 +83,6 @@
         "disabled": "false"
     },
     {
-        "id": "31c8ff7e6dc8f73d",
-        "type": "ui-group",
-        "name": "Crop",
-        "page": "1c93847e3b458925",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "1c93847e3b458925",
-        "type": "ui-page",
-        "name": "BHive",
-        "ui": "06b579fc3bc5fd14",
-        "path": "/page2",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bc5ecf900d297101",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "5a7a67a4568c688b",
         "type": "ui-page",
         "name": "Settings",
@@ -173,10 +123,10 @@
         "type": "ui-group",
         "name": "Target Ranges",
         "page": "5a7a67a4568c688b",
-        "width": 6,
+        "width": "12",
         "height": 1,
         "order": 1,
-        "showTitle": true,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false",
