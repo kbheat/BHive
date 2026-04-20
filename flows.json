@@ -64,7 +64,27 @@
         "x": 90,
         "y": 180,
         "wires": [
-            [],
+            [
+                "de2d73b216300a42"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "de2d73b216300a42",
+        "type": "function",
+        "z": "190cd4b9f45ba92d",
+        "name": "Parse Registers",
+        "func": "var r = msg.payload;\n\nmsg.payload = {\n    ph: (r[0] / 100).toFixed(2),\n    ec: (r[1] / 100).toFixed(2),\n    int_temp: (r[2] / 10).toFixed(1),\n    int_rh: (r[3] / 10).toFixed(1),\n    ext_temp: (r[4] / 10).toFixed(1),\n    ext_rh: (r[5] / 10).toFixed(1),\n    lights: r[6] === 1,\n    main_pump: r[7] === 1,\n    pump_a: r[8] === 1,\n    pump_b: r[9] === 1,\n    ph_up: r[10] === 1,\n    ph_down: r[11] === 1,\n    humidifier: r[12] === 1,\n    vents: r[13]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
             []
         ]
     }
